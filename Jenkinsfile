@@ -19,7 +19,7 @@ node {
         }
     }
 
-   stage('Maven Compile-Package'){
+   stage('Maven Compile and Package'){
      def mvnHome = tool name: 'maven', type: 'maven'
      sh '${mvnHome}/bin/mvn package'
    }
